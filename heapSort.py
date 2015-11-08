@@ -27,6 +27,7 @@ def heapSort(heap, reverse=False):
     for idx in range(len(heap) - 1, 0, -1):
         heap[0], heap[idx] = heap[idx], heap[0]
         percolateDown(heap, 0, idx - 1, reverse=reverse)
+    return heap
 
 
 if __name__ == '__main__':
