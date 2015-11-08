@@ -27,11 +27,11 @@ def quickSort(array, begin=0, end=None, *, reverse=False):
 
     if begin < end:
         mid = partition(array, begin, end, reverse=reverse)
-        quickSort(array, begin, mid)
+        quickSort(array, begin, mid - 1)
         quickSort(array, mid + 1, end)
 
 
 if __name__ == '__main__':
-    a = [3, 4, 6, 1, 2, 5, 9]
+    a = [3, 4, 6, 3, 1, 2, 5, 9]
     quickSort(a)
     print(a)
