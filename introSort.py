@@ -18,5 +18,5 @@ def introSort(array, begin=0, end=None, depth=0, *, reverse=False):
 
 if __name__ == '__main__':
     a = [3, 4, 6, 3, 1, 2, 5, 9]
-    introSort(a)
+    introSort(a, reverse=True)
     print(a)
